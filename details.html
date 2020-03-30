@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+
+    <title>المدرسه الذاكيه</title>
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 meun">
+                    <div class="side">
+                        <nav>
+                            <i class="fas fa-times"></i>
+                            <div>
+                                <div class=" border-bottom pt-3 pb-2">
+                                    <img src="img/LOGO-LEFT-Blue.png" class="w-50 mx-5" alt="">
+                                </div>
+                                <ul class="mx-4 pt-4">
+                                    <li class="activeLink">
+                                        <a href="index.html">
+                                            <i class="fas fa-tachometer-alt px-3"></i>الرئيسيه
+                                        </a>
+                                    </li>
+
+                                    <li class="school list-second">
+                                        <i class="fas fa-users px-3"></i>المدارس
+                                        <i class="fas fa-chevron-down arrow-bottom" id="arrow-bottom-school"></i>
+                                        <i class="fas fa-chevron-up arrow-up" id="arrow-up-school"></i>
+
+                                        <ul class="mx-3 second-list" id="school-list">
+
+                                            <li>
+                                                <a href="allscholl.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> جميع المدارس
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="addschool.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> اضافه المدارس
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Not subscribed.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> مدارس غير المشتركين
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="CreditMessage.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> ارصده الرسائل النصيه
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="التذاكر.html"><i class="fas fa-archive px-3"></i>التذاكر</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="المدفوعات.html">
+                                            <i class="fas fa-credit-card px-3">
+                                            </i>المدفوعات
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="التسويق.html">
+                                            <i class="fas fa-bullhorn px-3"></i>التسويق
+
+                                        </a>
+                                    </li>
+                                    <li class="list-second" id="setting">
+                                        <i class="fas fa-cog px-3"></i> اعدادات<i class="fas fa-chevron-down arrow-bottom" id="arrow-bottom-setting"></i></i>
+                                        <i class="fas fa-chevron-up arrow-up" id="arrow-up-setting"></i>
+
+                                        <ul class="mx-3 second-list" id="seeting-list">
+                                            <li>
+                                                <a href="Administration.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> الادارات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Licenses.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> التراخيص
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="price-Licenses.html"> <i class="fas fa-long-arrow-alt-left px-3"></i> اسعار التراخيص
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="priceSubscriptions.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i>اسعار الاشتراكات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="pricemessage.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i>اسعار الرسائل النصيه
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="المستخدمين والصلاحيات.html" class="last">
+                                            <i class="far fa-folder px-3"></i>المستخدمين والصلاحيات
+
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-9 position-relative" id="main">
+                    <div class="top-nav py-3 clearfix ">
+                        <i class="fas fa-bars"></i>
+                        <ul class="nav-now w-75 float-right">
+                            <li>اجمالي التذاكر المفتوحه <span>230</span></li>
+                            <li>مدفوعات قيد الانتظار <span>230</span></li>
+                            <li> مبالغ مجموله<span>230</span></li>
+                        </ul>
+                        <ul class="width-nav-login float-left nav-notf mx-auto text-center">
+                            <li><i class="far fa-envelope">
+                                <span class="not">10</span>
+                            </i></li>
+                            <li><i class="far fa-bell">
+                                <span class="not">10</span>
+
+                            </i></li>
+                            <li><i class="fas fa-power-off"></i></li>
+                        </ul>
+                    </div>
+
+                    <main class="mt-4 px-3 topFixed" id="page">
+                        <section class="">
+
+
+                            <h3>الرئيسيه/ جميع المدارس /
+                                <span class='px-1'>
+                                    عرض تفاصيل المدرسه
+                            </span>
+
+                            </h3>
+                            <section>
+                                <div class="container">
+
+                                    <div class="row ">
+
+
+
+                                        <div class="col">
+                                            <div class="bg-white  py-3 my-2">
+                                                <div class="row">
+                                                    <div class="col-5 ">
+                                                        <div class="">
+                                                            <img src="img/students.svg" class="w-75" alt="" srcset="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h6>دخول المستخدمين</h6>
+                                                        <p class="pt-1">
+                                                            222222
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bg-white  py-3 my-2">
+                                                <div class="row">
+                                                    <div class="col-5 ">
+                                                        <div class="">
+                                                            <img src="img/professor.svg" class="w-75" alt="" srcset="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h6>دخول المستخدمين</h6>
+                                                        <p class="pt-1">
+                                                            222222
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bg-white  py-3 my-2">
+                                                <div class="row">
+                                                    <div class="col-5 ">
+                                                        <div class="">
+                                                            <img src="img/parents.svg" class="w-75" alt="" srcset="">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h6>دخول المستخدمين</h6>
+                                                        <p class="pt-1">
+                                                            222222
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="bg-white  py-3 my-2">
+                                                <div class="row">
+                                                    <div class="col-5 ">
+                                                        <div class="">
+                                                            <img src="img/users_traffic.svg" class="w-75 " alt=" " srcset=" ">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7 ">
+                                                        <h6>دخول المستخدمين</h6>
+                                                        <p class="pt-1 ">
+                                                            222222
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="bg-white py-3 my-2 ">
+                                                <div class="row ">
+                                                    <div class="col-5 ">
+                                                        <div class=" ">
+                                                            <img src="img/finger_print.svg " class="w-75 " alt=" " srcset=" ">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7 ">
+                                                        <h6>دخول المستخدمين</h6>
+                                                        <p class="pt-1 ">
+                                                            222222
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container my-4">
+                                    <div class="row sec-color py-2">
+                                        <div class="col-md-3">
+                                            <p> التذاكر المفتوحة: <span class="one-span px-2">230</span></p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> طلبات قيد الإنتظار: <span class="two-span px-2">230</span></p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> مبالغ مجدولة :<span class="three-span px-2">230 ريال</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="container-fluid">
+
+                                    <div class="row my-4">
+
+                                        <div class="col-md-4 ">
+                                            <div class="bg-white shadow">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2">بيانات المدرسه</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> اسم المدرسة : <span class="px-1"> مدرسة النهضة التعليمية بنين</span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> اسم الإدارة :<span class="px-1"> الإدارة العامة للتعليم بمحافظة الرياض   </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> عنوان المدرسة : <span class="px-1">   الرياض 12813 ، المملكة العربية السعودية </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> المرحلة :<span class="px-2">   المرحلة الثانوية </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> القطاع :<span class="px-2">   حكومي </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> النوع :<span class="px-2"> بنين   </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> البريد الإلكتروني :<span class="px-2">   school@info.com </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> الهاتف :<span class="px-2">   002 010 900 75 695 </span></p>
+                                                    </li>
+                                                </ul>
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2" id="edit-school-card">تعديل</button>
+                                                    <button class="w-90 py-2 text-center mx-auto my-2" id="edit-pass-card">تعديل كلمه المرور</button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white shadow">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2"> بيانـات المدير والمسؤول</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> اسم المدير :<span class="px-1">  آدم محمود ابراهيم  </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> رقم الجوال :<span class="px-1">    002 010 900 75 695   </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> اسم المسؤول :<span class="px-1">  عبد الرحمن احمد عبد الله    </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> رقم الجوال :<span class="px-2">    002 010 900 75 695   </span></p>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2" id="edit-manger-card">تعديل</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4  ">
+                                            <div class="bg-white shadow pb-2">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2"> بيانات الإشتراك</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> تاريخ بداية الإشتراك : <span class="px-1">  1مايو 2010   </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> تاريخ نهاية الإشتراك : <span class="px-1">      1 مايو 2010 </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> حالة الإشتراك :<span class="px-1">   <a href="allscholl.html" class="active-reser px-2">
+                                                            مفعل
+                                                        </a>   </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> نوع الإشتراك :<span class="px-2">   مدفوع  </span></p>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2" id="edit-Subscription-card">تعديل</button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white shadow my-4 pb-2">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2"> بيانات تطبيقات المعلم</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> كود التسجيل : <span class="px-1">  3333  </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> كود التفعيل : <span class="px-1">     333  </span></p>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2 code-teacher-send-all" id="code-teacher-send">ارسال</button>
+                                                    <button class="w-90 py-2 text-center mx-auto my-2" id="edit-teacher-code">تعديل  </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white shadow my-4 pb-2">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2"> بيانات تطبيقات الطالب</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> كود التسجيل : <span class="px-1">   44444 </span></p>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2 send-code-student-all" id="send-code-card">ارسال</button>
+                                                    <button class="w-90 py-2 text-center mx-auto my-2" id="edit-code-card">تعديل  </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4  ">
+                                            <div class="bg-white shadow">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2"> التراخيص والرسائل</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> <span class="px-1"> برنامج الوكيل   </span></p>
+                                                        <div class="row message-arshive px-3">
+                                                            <div class="col-5 p-0">
+                                                                <p class="user"> المستخدم : <span>444</span></p>
+                                                            </div>
+                                                            <div class="col-4  p-0">
+                                                                <p class="descount"> المتبقي : <span>444</span></p>
+                                                            </div>
+                                                            <div class="col-3  p-0"> <button class=" px-3 mb-2  desc-button"><a href="appparent.html">تفاصيل</a></button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <p> <span class="px-1">  تطبيق المعلم   </span></p>
+                                                        <div class="row message-arshive px-3">
+                                                            <div class="col-5 p-0">
+                                                                <p class="user"> المستخدم : <span>444</span></p>
+                                                            </div>
+                                                            <div class="col-4  p-0">
+                                                                <p class="descount"> المتبقي : <span>444</span></p>
+                                                            </div>
+                                                            <div class="col-3  p-0"> <button class=" px-3 mb-2  desc-button"><a href="appteacher.html">تفاصيل</a></button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <p> <span class="">  تطبيق الطالب   </span></p>
+                                                        <div class="row message-arshive px-3">
+                                                            <div class="col-5 p-0">
+                                                                <p class="user"> المستخدم : <span>444</span></p>
+                                                            </div>
+                                                            <div class="col-4  p-0">
+                                                                <p class="descount"> المتبقي : <span>444</span></p>
+                                                            </div>
+                                                            <div class="col-3  p-0"> <button class=" px-3 mb-2  desc-button"><a href="appstudent.html">تفاصيل</a></button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+
+                                            <div class="bg-white shadow">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2"> بيانات الرسائل النصية</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> اسم المزود : <span class="px-1">  اسم المزود  </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> اسم المستخدم : <span class="px-1"> admin_admin      </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> كلمة المرور : <span class="px-1"> Wdr$451@jfd     </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> اسم المرسل : <span class="px-2"> Adam Mahmoud    </span></p>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2 data-message-all" id="edit-pass-card">تعديل  </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white shadow">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2">
+
+                                                    سجل مدفوعات المدرسة</p>
+
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2 show-all-archive "> 
+                                                        <a href="allpayfields.html" class="allpayfields">
+                                                            عرض سجل المدفوعات الخاصة بالمدرسة
+                                                        </a>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white shadow">
+
+                                                <p class="border-six px-2 mx-2  py-2 my-2"> بيانات قاعــدة البيانــات</p>
+                                                <ul class="data-school px-3">
+                                                    <li>
+                                                        <p> السيرفر : <span class="px-1">  192.168.1.1  </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> اسم القاعدة :<span class="px-1">  اسم القاعدة     </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> اسم المستخدم : <span class="px-1">   آدم محمود   </span></p>
+                                                    </li>
+                                                    <li>
+                                                        <p> كلمة المرور : <span class="px-2">   Wdr$451@jfd  </span></p>
+                                                    </li>
+
+                                                </ul>
+                                                <div class="text-center">
+                                                    <button class="w-90 py-2 text-center mx-auto my-2" id="edit-pass-card-two">تعديل  </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </section>
+
+                            <div class="container-fluid ">
+
+                                <div class="container-fluid ">
+                                    <div class="row bg-white shadow box-button py-3 ">
+                                        <div class="col-md-2 my-2 ">
+                                            <p class="px-2 "> وصول سريع
+                                            </p>
+                                        </div>
+                                        <div class="col-md-2 my-2 ">
+                                            <button class="  one-btn btn-all w-100 " id="open-send-message">ارسال رسالة نصية</button>
+                                        </div>
+                                        <div class="col-md-2 my-2 ">
+                                            <button class=" two-btn btn-all w-100 " id="open-send-file">ارسال ملفات التحميل</button>
+                                        </div>
+                                        <div class="col-md-2 my-2 ">
+                                            <button class="  three-btn btn-all w-100 " id="data-user">بيانات المستخدمين</button>
+                                        </div>
+                                        <div class="col-md-2 my-2 ">
+                                            <button class="four-btn btn-all w-100 " id="bug-app">أخطاء التطبيقات</button>
+                                        </div>
+                                        <div class="col-md-2 my-2 ">
+                                            <button class="  five-btn btn-all w-100 " id="delete-school-details"> حذف المدرسة</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="bg-white mt-4 px-3 mb-5 pb-3">
+                                    <div class=" border-bottom-custom-2 ">
+                                        <h2>الملاحظات</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div id="new-table">
+                                            <div class="table">
+
+                                                <div class="row header">
+                                                    <div class="cell">
+                                                        <span class="px-2">التاريخ</span>
+                                                    </div>
+                                                    <div class="cell">
+                                                        <span>اسم الموظف</span>
+                                                    </div>
+                                                    <div class="cell">
+                                                        <span>ملاحظات</span>
+                                                    </div>
+                                                    <div class="cell">
+
+                                                    </div>
+                                                    <div class="cell">
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <span class="px-2">11 - 03 - 2020 </span>
+                                                    </div>
+                                                    <div class="cell">
+                                                        عبد الرحمن بن عبدالله الشامي
+                                                    </div>
+                                                    <div class="cell">
+                                                        .. هناك حقيقة مثبتة منذ زمن طويل وهي ان المحتوى المقروء لصفحة ما سيلهى القارئ </div>
+                                                    <div class="cell">
+                                                        <i class="fas fa-edit edit-notes"></i>
+                                                        <button class="mx-2 px-3 py-2 active-button">تفعيل</button>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <span class="px-2">11 - 03 - 2020 </span>
+                                                    </div>
+                                                    <div class="cell">
+                                                        عبد الرحمن بن عبدالله الشامي
+                                                    </div>
+                                                    <div class="cell">
+                                                        .. هناك حقيقة مثبتة منذ زمن طويل وهي ان المحتوى المقروء لصفحة ما سيلهى القارئ </div>
+                                                    <div class="cell">
+                                                        <i class="fas fa-edit edit-notes"></i>
+                                                        <button class="mx-2 px-3 py-2 active-button">تفعيل</button>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <span class="px-2">11 - 03 - 2020 </span>
+                                                    </div>
+                                                    <div class="cell">
+                                                        عبد الرحمن بن عبدالله الشامي
+                                                    </div>
+                                                    <div class="cell">
+                                                        .. هناك حقيقة مثبتة منذ زمن طويل وهي ان المحتوى المقروء لصفحة ما سيلهى القارئ </div>
+                                                    <div class="cell">
+                                                        <i class="fas fa-edit edit-notes"></i>
+                                                        <button class="mx-2 px-3 py-2 active-button">تفعيل</button>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="cell">
+                                                        <span class="px-2">11 - 03 - 2020 </span>
+                                                    </div>
+                                                    <div class="cell">
+                                                        عبد الرحمن بن عبدالله الشامي
+                                                    </div>
+                                                    <div class="cell">
+                                                        .. هناك حقيقة مثبتة منذ زمن طويل وهي ان المحتوى المقروء لصفحة ما سيلهى القارئ </div>
+                                                    <div class="cell">
+                                                        <i class="fas fa-edit edit-notes"></i>
+                                                        <button class="mx-2 px-3 py-2 active-button">تفعيل</button>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                        </section>
+                    </main>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup-send-message">
+            <div class="box-send-message">
+                <p class="border-bottom-custom-2 my-2 mx-3 py-2">
+                    ارسال رسالة نصية
+                </p>
+                <div>
+                    <h6 class="my-3">حدد الأرقام التي سيتم ارسال الرسالة لها</h6>
+                    <div>
+                        <div class="row px-3" id="all-phone">
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="one-number">
+                                        <label for="one-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="two-number">
+                                        <label for="two-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="three-number">
+                                        <label for="three-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="four-number">
+                                        <label for="four-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="five-number">
+                                        <label for="five-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="six-number">
+                                        <label for="six-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="sevev-number">
+                                        <label for="sevev-number" class="">010000</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="eight-number">
+                                        <label for="eight-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="nine-number">
+                                        <label for="nine-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="ten-number">
+                                        <label for="ten-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="a-number">
+                                        <label for="a-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="b-number">
+                                        <label for="b-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="c-number">
+                                        <label for="c-number" class="">010000</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="" id="x-number">
+                                        <label for="x-number" class="">010000</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="px-3 mt-4">
+                            ادخل نص الرساله : <span class="chosen">(اختياري) </span><span class="massage-total float-left"> رصيد الرسائل: 4200</span>
+                        </p>
+                        <div class="px-4">
+                            <textarea name="" id="" class="w-100" rows="5"></textarea>
+                            <label for="" class="my-1"> عدد النقاط المخصومه : <span class="point-descount"> 5</span></label>
+                        </div>
+                        <div class="px-4 float-left py-2 my-2">
+                            <button class="cancel-message py-2 mx-2  px-5" id="cancel-message">الغاء</button>
+                            <button class="send-message py-2  px-5" id="send-message">ارسال</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="popup-send-file">
+            <div class="box-send-file">
+                <div class="py-3">
+                    <img src="img/warn.svg" class="mx-3" alt="">
+                    <span>هل تريد بالتأكيد ارسال بيانات التحميل؟</span>
+                </div>
+                <div class="px-4 float-left py-2 my-2">
+                    <button class="cancel-file py-2 mx-2  px-5" id="cancel-file">الغاء</button>
+                    <button class="send-file py-2  px-5" id="send-file">ارسال</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="popup-bug">
+            <div class="box-app-bug p-3">
+                <h6 class="py-2 border-six">اخطاء التطبيقات </h6>
+                <div class="container ">
+                    <div class="row px-0">
+                        <div class="col-md-12 px-0">
+                            <div class="faq">
+                                <div class="item">
+                                    <div class="question">
+                                        <h4>
+                                            اسم الشاشة يتم وضعها هنا (11:32 ص - 22/03/2020) </h4>
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </div>
+                                    <div class="answer">
+                                        <p>
+
+                                            هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ،
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="question">
+                                        <h4>
+                                            اسم الشاشة يتم وضعها هنا (11:32 ص - 22/03/2020) </h4>
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </div>
+                                    <div class="answer">
+                                        <p>
+
+                                            هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ،
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="question">
+                                        <h4>
+                                            اسم الشاشة يتم وضعها هنا (11:32 ص - 22/03/2020) </h4>
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </div>
+                                    <div class="answer">
+
+                                        <p>
+
+                                            هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ،
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="question">
+                                        <h4>
+                                            اسم الشاشة يتم وضعها هنا (11:32 ص - 22/03/2020)
+
+                                        </h4>
+                                        <i class="fa fa-plus"></i>
+                                        <i class="fa fa-minus"></i>
+                                    </div>
+                                    <div class="answer">
+                                        <p>
+
+                                            هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ، هنا يتم وضع وصف الخطأ،
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-left my-2">
+                    <button id="none-all" class="px-4 py-2 mb-2 mt-4">الغاء</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="popup-delete-schol-message">
+            <div class="box-delete  py-2">
+                <p>
+                    <img src="img/trash.svg" class="px-2" alt=""> هل تريد تاكيد الحذف
+                </p>
+                <div class="px-2 float-left py-2 my-2">
+                    <button class="cancel-delete py-2 mx-2  px-4" id="cancel-delete">الغاء</button>
+                    <button class="delete py-2  px-2" id="send-delete"> تاكيد الحذف</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-user-data">
+            <div class="box-user-data ">
+                <p class="mx-2 py-3 border-six">بيانات المستخدمين</p>
+
+
+                <div>
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-12" id="second-table">
+                                <div class="table table-second">
+
+
+
+                                    <div class="row row-table">
+                                        <div class="cell-1 px-3">
+                                            <label class="container-checkbox">
+                                                <span class="num pr-2">#</span> 
+                                             <input type="checkbox">
+                                             <span class="checkmark"></span>
+                                             </label>
+                                        </div>
+                                        <div class="cell px-3">
+                                            اسم المستخدم
+                                        </div>
+                                        <div class="cell px-2">
+                                            العدد </div>
+                                        <div class="cell">
+                                            المسمي الوظيفي
+                                        </div>
+                                        <div class="cell">
+                                            كلمه المرور
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-table">
+                                        <div class="cell-1 px-3">
+                                            <label class="container-checkbox">
+                                                <span class="num pr-2">1</span> 
+                                             <input type="checkbox">
+                                             <span class="checkmark"></span>
+                                             </label>
+                                        </div>
+                                        <div class="cell px-3">
+                                            username </div>
+                                        <div class="cell px-2">
+                                            العدد </div>
+                                        <div class="cell">
+                                            المسمي الوظيفي
+                                        </div>
+                                        <div class="cell">
+                                            كلمه المرور
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-table">
+                                        <div class="cell-1 px-3">
+                                            <label class="container-checkbox">
+                                                <span class="num pr-2">1</span> 
+                                             <input type="checkbox">
+                                             <span class="checkmark"></span>
+                                             </label>
+                                        </div>
+                                        <div class="cell px-3">
+                                            username </div>
+                                        <div class="cell px-2">
+                                            العدد </div>
+                                        <div class="cell">
+                                            المسمي الوظيفي
+                                        </div>
+                                        <div class="cell">
+                                            كلمه المرور
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-table">
+                                        <div class="cell-1 px-3">
+                                            <label class="container-checkbox">
+                                                <span class="num pr-2">1</span> 
+                                             <input type="checkbox">
+                                             <span class="checkmark"></span>
+                                             </label>
+                                        </div>
+                                        <div class="cell px-3">
+                                            username </div>
+                                        <div class="cell px-2">
+                                            العدد </div>
+                                        <div class="cell">
+                                            المسمي الوظيفي
+                                        </div>
+                                        <div class="cell">
+                                            كلمه المرور
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-5 text-left mx-2">
+                    <button class="py-2 px-3 cansel-data" id="cansel-data">الالغاء</button>
+                    <button class="py-2 px-3 delete-data" id="delete-data">الحذف</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup-active-notes">
+            <div class="box-edit-notes p-2">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+                    تفاصيل الملاحظات </p>
+                <div class=" mt-4 px-2 mx-2">
+                    <ul>
+                        <li>
+                            <p><span> اسم الموظف :  </span>عبد الرحمن بن عبدالله الشامي</p>
+                        </li>
+                        <li>
+                            <p><span>  التاريخ   : </span> 1 مايو 2010</p>
+
+                        </li>
+                        <li>
+                            <span>الرسالة : </span>
+                            <p>
+                                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام
+                                "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-3 text-left mt-3 mb-2">
+                    <button class="px-4 py-2 mx-2 cansel-edit">الغاء</button>
+                    <button class="px-4 py-2  delete-edit">حذف</button>
+                </div>
+            </div>
+        </div>
+        <div id="popup-edit-notes">
+            <div class="box-edit-notes p-2">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+                    تعديل الملاحظات </p>
+                <div class=" mt-4 px-2 mx-2">
+                    <ul>
+                        <li>
+                            <p><span> اسم الموظف :  </span>عبد الرحمن بن عبدالله الشامي</p>
+                        </li>
+                        <li>
+                            <p><span>  التاريخ   : </span> 1 مايو 2010</p>
+
+                        </li>
+                        <li>
+                            <span>الرسالة : </span>
+                            <div>
+                                <textarea name="" id="" class="w-100" rows="5"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-3 text-left mt-3 mb-2">
+                    <button class="px-4 py-2 mx-2 cansel-edit">الغاء</button>
+                    <button class="px-4 py-2  delete-edit">حذف</button>
+                    <button class="px-4 py-2  sure-edit mx-2">تاكيد</button>
+                </div>
+            </div>
+        </div>
+        <div id="poup-edit-pass">
+            <div class="edit-pass-box px-3 ">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+                    تعديل كلمة المرور لحساب المدرسة</p>
+                <div class="row my-3">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <label for="">كلمة المرور الجديدة</label>
+
+                    </div>
+                    <div class="col-md-8">
+                        <input id="password-field" type="password" class="w-100 py-2 " name="password" value="">
+                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <label for=""> تأكيد كلمة المرور </label>
+
+                    </div>
+                    <div class="col-md-8">
+                        <input id="password-sure" type="password" class="w-100 py-2 " name="password sure" value="">
+                        <span toggle="#password-sure" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="form-group  ">
+                            <input type="checkbox" class="" id="passsend">
+                            <label for="passsend" class="">ارسال كلمة المرور كرسالة نصية</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-left mb-3 mx-2">
+                    <button class="mx-2 px-3 py-1 cancel-editPas">الغاء</button>
+                    <button class=" px-3 py-1 editPas">تعديل</button>
+                </div>
+            </div>
+        </div>
+        <div id="popup-edit-school-data">
+            <div class="popup-edit-school-data p-3">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+                    تعديل بيانات المدرسة
+                </p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+
+                                <div class="my-2">
+                                    <label for="">نوع المدرسة</label>
+                                    <div class="select w-100">
+                                        <select name="slct" id="slct" class="w-100">
+                                      <option selected disabled>Choose an option</option>
+                                      <option value="1">option</option>
+                                      <option value="2">option</option>
+                                      <option value="3">option</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="my-2">
+                                    <label for="">اسم المدرسة</label>
+                                    <div class="select w-100">
+                                        <select name="slct" id="slct" class="w-100">
+                                      <option selected disabled>Choose an option</option>
+                                      <option value="1">option</option>
+                                      <option value="2">option</option>
+                                      <option value="3">option</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="my-2">
+                                    <label for="">المرحلة</label>
+                                    <div class="select w-100">
+                                        <select name="slct" id="slct" class="w-100">
+                                      <option selected disabled>Choose an option</option>
+                                      <option value="1">option</option>
+                                      <option value="2">option</option>
+                                      <option value="3">option</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="my-2">
+                                    <label for="">البريد الإلكتروني</label>
+                                    <div>
+                                        <input type="email " class="w-100 py-2" name="" id="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+
+                                <div class="my-2">
+                                    <label for=""> الإدارة التعليمية</label>
+                                    <div class="select w-100">
+                                        <select name="slct" id="slct" class="w-100">
+                                      <option selected disabled>Choose an option</option>
+                                      <option value="1">option</option>
+                                      <option value="2">option</option>
+                                      <option value="3">option</option>
+                                    </select>
+                                    </div>
+                                </div>
+
+                                <div class="my-2">
+                                    <label for=""> عنوان المدرسة</label>
+                                    <input type="email" class="w-100 py-2" name="" id="">
+
+                                </div>
+
+                                <div class="my-2">
+                                    <label for="">القطاع</label>
+                                    <div class="select w-100">
+                                        <select name="slct" id="slct" class="w-100">
+                                      <option selected disabled>Choose an option</option>
+                                      <option value="1">option</option>
+                                      <option value="2">option</option>
+                                      <option value="3">option</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="my-2">
+                                    <label for="" class="pt-1">الهاتف </label>
+                                    <div>
+                                        <input type="tel" class="w-100 py-2" name="" id="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" text-btn my-3 ">
+                    <button class="btn-now-save px-5 py-2 cancel-edit-school-data">الغاء</button>
+                    <button class=" px-5 py-2 save-edit-school-data">حفظ</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="poup-edit-pass-two">
+            <div class="edit-pass-box-two px-3 ">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+                    تعديل كلمة المرور لحساب المدرسة</p>
+                <div class="row my-3">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <label for="">كلمة المرور الجديدة</label>
+
+                    </div>
+                    <div class="col-md-8">
+                        <input id="password-field-two" type="password" class="w-100 py-2" name="password-field-two" value="">
+                        <span toggle="#password-field-two" class="fa fa-fw fa-eye field-icon toggle-password-two"></span>
+
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <label for=""> تأكيد كلمة المرور </label>
+
+                    </div>
+                    <div class="col-md-8">
+                        <input id="password-eidit-two" type="password" class="w-100 py-2" name="password-eidit-two" value="">
+                        <span toggle="#password-eidit-two" class="fa fa-fw fa-eye field-icon toggle-password-two"></span>
+
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <input type="checkbox" class="" id="passEdit">
+                            <label for="passEdit" class="">ارسال كلمة المرور كرسالة نصية</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-left mb-3 mx-2">
+                    <button class="mx-2 px-3 py-1 cancel-editPas-two ">الغاء</button>
+                    <button class=" px-3 py-1  editPas-two">تعديل</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="poup-edit-Subscription">
+            <div class="box-Subscription">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+                    تعديل حالة الإشتراك </p>
+                <div class="row px-3 my-3">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                        <label for="">
+                تاريخ الإنتهاء
+            </label>
+                    </div>
+                    <div class="col-md-8 ">
+                        <input type="date" class="w-100 py-2">
+                    </div>
+                </div>
+                <div class="row px-3 my-3">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                        <label for="">
+                            نوع الإشتراك            </label>
+                    </div>
+                    <div class="col-md-8 ">
+
+                        <div class="my-2">
+                            <div class="select w-100">
+                                <select name="slct" id="slct" class="w-100">
+                              <option selected disabled>Choose an option</option>
+                              <option value="1">option</option>
+                              <option value="2">option</option>
+                              <option value="3">option</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-3 my-3">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                        <label for="">
+                            حالة الإشتراك            </label>
+                    </div>
+                    <div class="col-md-8 ">
+
+                        <div class="my-2">
+                            <div class="select w-100">
+                                <select name="slct" id="slct" class="w-100">
+                              <option selected disabled>Choose an option</option>
+                              <option value="1">option</option>
+                              <option value="2">option</option>
+                              <option value="3">option</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-left mb-3 mx-2">
+                    <button class="mx-2 px-5 py-2 cancel-Subscription ">الغاء</button>
+                    <button class=" px-5 py-2  edit-Subscription">تعديل</button>
+                </div>
+            </div>
+        </div>
+        <div id="edit-data-manger">
+            <div class="edit-data-manger">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+
+                    تعديل بيانـات المدير والمسؤول </p>
+                <div class="row my-3 mx-2">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="">اسم المدير</label>
+                                <div>
+                                    <input type="text" class="w-100" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">رقم الجوال </label>
+                                <div>
+                                    <input type="tel" class="w-100" name="" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3 mx-2">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="">اسم المسؤول</label>
+                                <div>
+                                    <input type="text" class="w-100" name="" id="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">رقم الجوال </label>
+                                <div>
+                                    <input type="tel" class="w-100" name="" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-left mb-3 mx-4">
+                    <button class="mx-2 px-5 py-2 cancel-manger cancel-color">الغاء</button>
+                    <button class=" px-5 py-2  edit-manger edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+        <div id="edit-code">
+            <div class="edit-code">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+
+                    تعديل بيانات تطبيق الطالب
+                </p>
+                <div class="row mx-4 my-4">
+                    <div class="col-md-4">
+                        <label for="">كود التسجيل</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="w-100 py-2" name="" id="">
+                    </div>
+                </div>
+                <div class="text-left mb-3 mx-4">
+                    <button class="mx-2 px-5 py-2 cancel-code cancel-color">الغاء</button>
+                    <button class=" py-2  edit-code-button px-5 edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="send-code-teacher">
+            <div class="send-code-teacher">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+
+                    تعديل بيانات تطبيق المعلم </p>
+                <div class="row mx-4 my-4">
+                    <div class="col-md-4">
+                        <label for="">كود التسجيل</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="w-100 py-2" name="" id="">
+                    </div>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div class="col-md-4">
+                        <label for="">كود التفعيل</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="w-100 py-2" name="" id="">
+                    </div>
+                </div>
+                <div class="text-left mb-3 mx-4">
+                    <button class="mx-2 px-5 py-2 cancel-code-send cancel-color">الغاء</button>
+                    <button class=" py-2  code-send-button px-5 edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+        <div id="popup-send-code-student">
+            <div class="popup-send-code-student">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+
+
+                    ارسال كود التسجيل الخاص بـ ( بيانات تطبيقات الطالب ) </p>
+                <div class="w-35 mx-auto code-active px-3 py-3 my-3 text-center"> كود التسجيل : <span>444</span></div>
+                <p class="px-4">حدد رقم يتم ارسال له الرساله</p>
+                <ul class="px-4">
+                    <li>
+                        <div class="form-group">
+                            <input type="checkbox" class="" id="one-w">
+                            <label for="one-w" class="">010000</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <input type="checkbox" class="" id="one-k">
+                            <label for="one-k" class="">010000</label>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="px-3 my-1">
+                    ادخل نص للرسالة <span class="choosen">( اختياري )</span> <span class="float-left message-price"> رصيد الرسائل : 400</span>
+                </div>
+                <div class="px-3 my-1">
+                    <textarea name="" class="w-100" id="" rows="2"></textarea>
+                </div class="px-3">
+                <p class="px-3"> عدد النقاط المخصومة : <span class="point-all"> 3 </span></p>
+                <div class="my-3 text-left px-3">
+                    <button class="mx-2 px-5 py-2 cancel-student-send cancel-color">الغاء</button>
+                    <button class=" py-2  code-send-student px-5 edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="popup-send-code-teacher">
+            <div class="popup-send-code-teacher">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+
+
+                    ارسال كود التسجيل والتفعيل الخاص بـ ( بيانات تطبيقات المعلم ) </p>
+                <div class="text-center">
+                    <div class="w-35 mx-auto code-active px-3 py-3 my-3 text-center d-inline-block"> كود التسجيل : <span>444</span></div>
+                    <div class="w-35 mx-auto code-active px-3 py-3 my-3 text-center d-inline-block"> كود التفعيل : <span>444</span></div>
+
+                </div>
+                <p class="px-4">حدد رقم يتم ارسال له الرساله</p>
+                <ul class="px-4">
+                    <li>
+                        <div class="form-group">
+                            <input type="checkbox" class="" id="one-w">
+                            <label for="one-w" class="">010000</label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="form-group">
+                            <input type="checkbox" class="" id="one-t">
+                            <label for="one-t" class="">010000</label>
+                        </div>
+                    </li>
+                </ul>
+                <div class="px-3 my-1">
+                    ادخل نص للرسالة <span class="choosen">( اختياري )</span> <span class="float-left message-price"> رصيد الرسائل : 400</span>
+                </div>
+                <div class="px-3 my-1">
+                    <textarea name="" class="w-100" id="" rows="2"></textarea>
+                </div class="px-3">
+                <p class="px-3"> عدد النقاط المخصومة : <span class="point-all"> 3 </span></p>
+                <div class="my-3 text-left px-3">
+                    <button class="mx-2 px-5 py-2 cancel-teacher-send cancel-color">الغاء</button>
+                    <button class=" py-2  code-send-teacher px-5 edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="send-code-teacher">
+            <div class="send-code-teacher">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+
+                    تعديل بيانات تطبيق المعلم </p>
+                <div class="row mx-4 my-4">
+                    <div class="col-md-4">
+                        <label for="">كود التسجيل</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="w-100 py-2" name="" id="">
+                    </div>
+                </div>
+                <div class="row mx-4 my-4">
+                    <div class="col-md-4">
+                        <label for="">كود التفعيل</label>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="text" class="w-100 py-2" name="" id="">
+                    </div>
+                </div>
+                <div class="text-left mb-3 mx-4">
+                    <button class="mx-2 px-5 py-2 cancel-code-send cancel-color">الغاء</button>
+                    <button class=" py-2  code-send-button px-5 edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+        <div id="popup-send-code-student">
+            <div class="popup-send-code-student">
+                <p class="px-2 mx-2 my-2 py-2 border-six">
+
+
+                    ارسال كود التسجيل الخاص بـ ( بيانات تطبيقات الطالب ) </p>
+                <div class="w-35 mx-auto code-active px-3 py-3 my-3 text-center"> كود التسجيل : <span>444</span></div>
+                <p class="px-4">حدد رقم يتم ارسال له الرساله</p>
+                <ul class="px-4">
+                    <li>
+                        <div class="form-group">
+                            <input type="checkbox" class="" id="one-w">
+                            <label for="one-w" class="">010000</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <input type="checkbox" class="" id="one-k">
+                            <label for="one-k" class="">010000</label>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="px-3 my-1">
+                    ادخل نص للرسالة <span class="choosen">( اختياري )</span> <span class="float-left message-price"> رصيد الرسائل : 400</span>
+                </div>
+                <div class="px-3 my-1">
+                    <textarea name="" class="w-100" id="" rows="2"></textarea>
+                </div class="px-3">
+                <p class="px-3"> عدد النقاط المخصومة : <span class="point-all"> 3 </span></p>
+                <div class="my-3 text-left px-3">
+                    <button class="mx-2 px-5 py-2 cancel-student-send cancel-color">الغاء</button>
+                    <button class=" py-2  code-send-student px-5 edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="popup-update-message">
+            <div class="popup-update-message px-2">
+                <p class=" mx-2 my-2 py-2 border-six">
+                    تعديل بيانات الرسائل النصية
+                </p>
+                <div class="row mt-2">
+                    <div class="col-md-3 "><label for="">اسم المزود</label></div>
+                    <div class="col-md-8 ">
+                        <div class="select ">
+                            <select name="slct" id="slct" class="w-100">
+                      <option selected disabled>Choose an option</option>
+                      <option value="1">option</option>
+                      <option value="2">option</option>
+                      <option value="3">option</option>
+                    </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-3"><label for=""> اسم المستخدم</label></div>
+                    <div class="col-md-8">
+                        <div>
+                            <input type="text" class="w-100 py-2" name="" id="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-3"><label for="">  كلمة المرور</label></div>
+                    <div class="col-md-8">
+                        <div>
+                            <input type="text" class="w-100 py-2" name="" id="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-3"><label for="">  اسم المرسل</label></div>
+                    <div class="col-md-8">
+                        <div>
+                            <input type="text" class="w-100 py-2" name="" id="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="my-3 text-left px-3">
+                    <button class="mx-2 px-5 py-2 update-message-cancel cancel-color">الغاء</button>
+                    <button class=" py-2  send-update-message px-5 edit-color">تعديل</button>
+                </div>
+            </div>
+        </div>
+        <div id="delete-schol-popup">
+            <div class="box-delete-school  py-2">
+                <p>
+                    <img src="img/trash.svg" class="px-2" alt=""> هل تريد بالتأكيد حذف هذه المدرسة؟ </p>
+                <div class="px-2 float-left py-2 my-2">
+                    <button class="cancel-delete py-2 mx-2  px-4" id="cancel-delete">الغاء</button>
+                    <button class="delete py-2  px-2" id="send-delete"> تاكيد الحذف</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3-4-1-min.js"></script>
+        <script src="js/aos.js "></script>
+        <script src="js/Chart.min.js "></script>
+        <script src="js/owl.carousel.min.js "></script>
+        <script src="js/jquery-accordion.js "></script>
+        <script src="js/details.js"></script>
+        <script src="js/main.js "></script>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+
+    <title>المدرسه الذاكيه</title>
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 meun">
+                    <div class="side">
+                        <nav>
+                            <i class="fas fa-times"></i>
+                            <div>
+                                <div class=" border-bottom pt-3 pb-2">
+                                    <img src="img/LOGO-LEFT-Blue.png" class="w-50 mx-5" alt="">
+                                </div>
+                                <ul class="mx-4 pt-4">
+                                    <li class="activeLink">
+                                        <a href="index.html">
+                                            <i class="fas fa-tachometer-alt px-3"></i>الرئيسيه
+                                        </a>
+                                    </li>
+
+                                    <li class="school list-second">
+                                        <i class="fas fa-users px-3"></i>المدارس
+                                        <i class="fas fa-chevron-down arrow-bottom" id="arrow-bottom-school"></i>
+                                        <i class="fas fa-chevron-up arrow-up" id="arrow-up-school"></i>
+
+                                        <ul class="mx-3 second-list" id="school-list">
+
+                                            <li>
+                                                <a href="allscholl.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> جميع المدارس
+
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="addschool.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> اضافه المدارس
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Not subscribed.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> مدارس غير المشتركين
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="CreditMessage.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> ارصده الرسائل النصيه
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="التذاكر.html"><i class="fas fa-archive px-3"></i>التذاكر</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="المدفوعات.html">
+                                            <i class="fas fa-credit-card px-3">
+                                            </i>المدفوعات
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="التسويق.html">
+                                            <i class="fas fa-bullhorn px-3"></i>التسويق
+
+                                        </a>
+                                    </li>
+                                    <li class="list-second" id="setting">
+                                        <i class="fas fa-cog px-3"></i> اعدادات<i class="fas fa-chevron-down arrow-bottom" id="arrow-bottom-setting"></i></i>
+                                        <i class="fas fa-chevron-up arrow-up" id="arrow-up-setting"></i>
+
+                                        <ul class="mx-3 second-list" id="seeting-list">
+                                            <li>
+                                                <a href="Administration.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> الادارات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="Licenses.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i> التراخيص
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="price-Licenses.html"> <i class="fas fa-long-arrow-alt-left px-3"></i> اسعار التراخيص
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="priceSubscriptions.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i>اسعار الاشتراكات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="pricemessage.html">
+                                                    <i class="fas fa-long-arrow-alt-left px-3"></i>اسعار الرسائل النصيه
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="المستخدمين والصلاحيات.html" class="last">
+                                            <i class="far fa-folder px-3"></i>المستخدمين والصلاحيات
+
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </nav>
+
+                    </div>
+                </div>
+                <div class="col-md-9 position-relative" id="main">
+                    <div class="top-nav py-3 clearfix ">
+                        <i class="fas fa-bars"></i>
+                        <ul class="nav-now w-75 float-right">
+                            <li>اجمالي التذاكر المفتوحه <span>230</span></li>
+                            <li>مدفوعات قيد الانتظار <span>230</span></li>
+                            <li> مبالغ مجموله<span>230</span></li>
+                        </ul>
+                        <ul class="width-nav-login float-left nav-notf mx-auto text-center">
+                            <li><i class="far fa-envelope">
+                                <span class="not">10</span>
+                            </i></li>
+                            <li><i class="far fa-bell">
+                                <span class="not">10</span>
+
+                            </i></li>
+                            <li><i class="fas fa-power-off"></i></li>
+                        </ul>
+                    </div>
+
+                    <main class="mt-4 px-1 topFixed" id="page">
+                        <section class="">
+
+
+                            <h3>المدارس / جميع المدارس /
+                                <span>سجل المدفوعات</span>
+                            </h3>
+                            <div class="container-fluid">
+                                <div class="bg-white mt-4">
+
+                                    <div class="row border-six my-2 py-2 mx-3">
+                                        <div class="col-md-2 my-2">
+                                            <h6> مدفوعات الانتظار
+
+                                            </h6>
+                                        </div>
+                                        <div class="col-md-10 date">
+                                            <div class=" text-all-left">
+
+                                                <span class="position-relative">
+                                                    <span class="picker-float">
+                                                    <label for="" class="" class="px-2">من</label>
+                                                    <input type="date" class="selector  mx-2  py-1 w-35" name="" id="">
+                                                    </span>
+                                                </span>
+
+                                                <span class="position-relative ">
+                                                    <span class="picker-float-two span-block">
+
+                                                    <label for="" class="" class="px-2 ">الي</label>
+                                                    <input type="date" class="selector   py-1 mx-2 my-2 w-35" name="" id="">
+                                                </span>
+                                                </span>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div>
+                                        <div class="container">
+
+                                            <div class="row">
+                                                <div class="col-md-12 mb-5">
+
+
+                                                    <div class="table100" id="price-licenses">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3">تاريخ الدفع </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> الملغ</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            رقم الحساب
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8  py-2">
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column8 py-2 ">
+
+                                                                        <p class="px-3"> 1 مايو 2010 </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> 100 ريال</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p>
+                                                                            1111111111
+                                                                        </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            اسم صاحب الحساب </p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول منه</p>
+
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+
+                                                                        <p class=""> البنك المحول اليه</p>
+
+                                                                    </td>
+
+                                                                    <td class="column8 py-2  d-flex  align-items-center">
+                                                                        <span class=" eye-table px-1 py-1">
+<a href="تفاصيل مدفوعات المدرسه.html">
+    <i class="far fa-eye "></i>
+
+</a>
+                                                                        </span>
+
+                                                                        <span class=" table-trash delete-filed px-1 py-1
+                                                                         mx-2"><i class="fas fa-trash "></i>
+                                                                        </span>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                    </main>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="delete-filed-service">
+            <div class="box-delete-filed  py-2">
+                <p>
+                    <img src="img/trash.svg" class="px-2 w-10 " alt=""> هل تريد بالتأكيد حذف هذه المدرسة؟ </p>
+                <div class="px-2 float-left py-2 my-2">
+                    <button class="cancel-delete py-2 mx-2  px-4" id="cancel-delete-filed">الغاء</button>
+                    <button class="delete py-2  px-2" id="delete-filed"> تاكيد الحذف</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3-4-1-min.js"></script>
+        <script src="js/flatpickr.js"></script>
+        <script src="js/date.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
